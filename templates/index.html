@@ -1,0 +1,24 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Топ 10 артистов - сентябрь 2023 Яндекс Музыка</title>
+</head>
+<body>
+    <h1>Топ 10 артистов - сентябрь 2023 Яндекс Музыка</h1>
+	<img src="data:image/jpeg;base64,{{ img_data }}" alt="Изображение">
+    <table border="1">
+        <tr>
+            <th>Исполнитель</th>
+            <th>Количесво лайков</th>
+            <th>Прослушиваний в месяц</th>
+        </tr>
+        {% for row in rows %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
